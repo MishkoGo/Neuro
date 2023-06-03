@@ -71,6 +71,7 @@ section{
     //border: $border;
     color: #dfd000;
     background: none;
+    padding: 0 0 0 10px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 700;
@@ -172,7 +173,7 @@ h5{
 
     .icons div{
         font-size: 2.5rem;
-        color: $white;
+        color: yellow;
         margin-left: 2rem;
         cursor: pointer;
     }
@@ -451,6 +452,7 @@ hr{
             img{
                 //height: 15rem;
                 margin-bottom: 2rem;
+                padding: 0 0 0 10px;
             }
             h3{
                 font-size: 1.5rem;
@@ -459,6 +461,7 @@ hr{
                 font-family: 'Geologia', sans-serif;
                 font-weight: 600;
                 text-transform: uppercase;
+                padding: 5px 0px 0px 10px;
             }
             p{
                 padding: 1rem 0;
@@ -879,15 +882,56 @@ section.blogs_2{
 
     .home h3{
         font-size: 4rem;
+        width: 100%;
+    }
+    .home span{
+        width: 100%;
     }
 
     section{
         padding: 3rem 0;
     }
+    .menu .container{
+        display: inline-block;
+        .box h3{ 
+            font-size: 2.0rem;
+            font-weight: 100;
+        }
+        .box p{ 
+            font-size: 2.0rem;
+            line-height: 1.4;
+            padding: 0px 0px;
+        }
+        .box a{ 
+            font-size: 1.6rem;
+        }
+    }
+    .menu_2 .container{
+        display: inline-block;
+        width: 35%;
+    }
+    .contact .contact-info-container{
+        display: grid;
+        width: 50%;
+        button#login-btn-4{
+            background: yellow;
+            border: 10px solid #fff;
+            font-size: 2.1rem;
+            margin: 0;
+        }
+    }
+    .footer .row_2{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 768px){
 
+    .menu_2 .container{
+        display: inline-block;
+        width: 50%;
+    }
     .login-form form{
         padding: 3rem 2rem;
 
@@ -911,11 +955,45 @@ section.blogs_2{
                 transform: rotate(180deg);
             }
         }
+        #login-tn{
+            position: absolute;
+            top: 99%; left: 0; right: 0;
+                background: yellow;
+                flex-flow: column;
+                padding: 1rem 0;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    
+        }
+        .icons #login-btn{
+            position: absolute;
+                top: 99%; left: 0; right: 0;
+                background: yellow;
+                flex-flow: column;
+                padding: 1rem 0;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    
+        }
+        // .icons{
+        //     position: absolute;
+        //     top: 99%; left: 0; right: 0;
+        //     background: yellow;
+        //     flex-flow: column;
+        //     padding: 1rem 0;
+        //     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 
+
+        //     &.active{
+        //         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        //     }
+        //     a{
+        //         margin: 1rem 2rem;
+        //         color: $black;
+        //     }
+        // }
         .nav{
             position: absolute;
             top: 99%; left: 0; right: 0;
-            background: $white;
+            background: yellow;
             flex-flow: column;
             padding: 1rem 0;
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -934,10 +1012,23 @@ section.blogs_2{
     .contact .map{
         height: 25rem;
     }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+       width: 100%;
+    }
 }
 
 @media (max-width:450px){
     html{
         font-size: 50%;
+    }
+    .menu_2 .container{
+        display: inline-block;
+        width: 78%;
     }
 }

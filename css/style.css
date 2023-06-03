@@ -54,6 +54,7 @@ section {
   display: inline-block;
   color: #dfd000;
   background: none;
+  padding: 0 0 0 10px;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
@@ -165,7 +166,7 @@ h5 {
 }
 .header .icons div {
   font-size: 2.5rem;
-  color: #fff;
+  color: yellow;
   margin-left: 2rem;
   cursor: pointer;
 }
@@ -469,6 +470,7 @@ hr {
 }
 .menu_2 .box-container .box img {
   margin-bottom: 2rem;
+  padding: 0 0 0 10px;
 }
 .menu_2 .box-container .box h3 {
   font-size: 1.5rem;
@@ -477,6 +479,7 @@ hr {
   font-family: "Geologia", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
+  padding: 5px 0px 0px 10px;
 }
 .menu_2 .box-container .box p {
   padding: 1rem 0;
@@ -931,12 +934,56 @@ section.blogs_2 {
   }
   .home h3 {
     font-size: 4rem;
+    width: 100%;
+  }
+  .home span {
+    width: 100%;
   }
   section {
     padding: 3rem 0;
   }
+  .menu .container {
+    display: inline-block;
+  }
+  .menu .container .box h3 {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  .menu .container .box p {
+    font-size: 2rem;
+    line-height: 1.4;
+    padding: 0px 0px;
+  }
+  .menu .container .box a {
+    font-size: 1.6rem;
+  }
+  .menu_2 .container {
+    display: inline-block;
+    width: 35%;
+  }
+  .contact .contact-info-container {
+    display: grid;
+    width: 50%;
+  }
+  .contact .contact-info-container button#login-btn-4 {
+    background: yellow;
+    border: 10px solid #fff;
+    font-size: 2.1rem;
+    margin: 0;
+  }
+  .footer .row_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 @media (max-width: 768px) {
+  .menu_2 .container {
+    display: inline-block;
+    width: 50%;
+  }
   .login-form form {
     padding: 3rem 2rem;
   }
@@ -958,12 +1005,40 @@ section.blogs_2 {
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
   }
+  .header #login-tn {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: yellow;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 1rem 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .icons #login-btn {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: yellow;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 1rem 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
   .header .nav {
     position: absolute;
     top: 99%;
     left: 0;
     right: 0;
-    background: #fff;
+    background: yellow;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
@@ -983,9 +1058,22 @@ section.blogs_2 {
   .contact .map {
     height: 25rem;
   }
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
 }
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .menu_2 .container {
+    display: inline-block;
+    width: 78%;
   }
 }
