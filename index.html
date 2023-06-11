@@ -18,7 +18,7 @@
                 </a>
                 <nav class="nav">
                     <a href="#home">Ставки</a>
-                    <a href="#about">Файл</a>
+                    <a href="#about">Файлы</a>
                     <a href="#menu">Программы</a>
                     <a href="#gallery">Новости</a>
                     <a href="#reviews">Контакты</a>
@@ -35,21 +35,42 @@
     </header>
 
     <div class="login-form">
-        <form action="">
+        <form action="php/login.php" method="post">
             <div id="close-login-form" class = "fas fa-times"></div>
             <a href="#" class = "logo mr-auto">
                 <img src="assets/logo_1.png" alt="">
             </a>
             <h3>Let's start a new great day</h3>
-            <input type="email" name = "" placeholder="enter your email" id="" class="box">
-            <input type="password" name = "" placeholder="enter your password" id="" class="box">
+            <input type="email" name = "email" placeholder="enter your email" id="" class="box">
+            <input type="password" name = "password" placeholder="enter your password" id="" class="box">
             <div class="flex">
                 <input type="checkbox" id="remember-me" name="">
                 <label for="remember-me">remember-me</label>
                 <a href="#">Forgot password?</a>
             </div>
             <input type="submit" value="login now" class="link-btn">
-            <p class="account">Don't have an account? <a href="#">create one!</a></p>
+            <p class="account">Don't have an account? <a href="#" id="link-register-btn">create one!</a></p>
+        </form>
+    </div>
+    <div class="register-form">
+        <form action="php/register.php" method="post">
+            <div id="close-register-form" class = "fas fa-times"></div>
+            <a href="#" class = "logo mr-auto">
+                <img src="assets/logo_1.png" alt="">
+            </a>
+            <h3>Register Form</h3>
+            <input type="email" name = "email" placeholder="enter your email" id="" class="box">
+            <input type="text" name = "name" placeholder="enter your name" id="" class="box">
+            <input type="password" name = "password" placeholder="enter your password" id="" class="box">
+            <input type="text" name = "organization" placeholder="enter your organization" id="" class="box">
+            <input type="number" name = "number" placeholder="enter your number" id="" class="box">
+            <div class="flex">
+                <input type="checkbox" id="remember-me" name="">
+                <label for="remember-me">remember-me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <input type="submit" value="register" class="link-btn">
+            <p class="account">You have an account? <a href="#" class="login-btn">create one!</a></p>
         </form>
     </div>
 

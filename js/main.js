@@ -1,4 +1,5 @@
 let loginForm = document.querySelector('.login-form');
+let registerForm = document.querySelector('.register-form');
 
 document.querySelector('#login-btn').onclick = () =>{
    loginForm.classList.add('active');
@@ -6,6 +7,13 @@ document.querySelector('#login-btn').onclick = () =>{
 
 document.querySelector('#close-login-form').onclick = () =>{
    loginForm.classList.remove('active');
+}
+
+document.querySelector('#link-register-btn').onclick = () =>{
+   registerForm.classList.add('active');
+}
+document.querySelector('#close-register-form').onclick = () =>{
+   registerForm.classList.remove('active');
 }
 
 let menu = document.querySelector('#menu-btn');
